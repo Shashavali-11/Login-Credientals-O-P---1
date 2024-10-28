@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login-Logic</title>
+  </head>
+  <body>
+    <p>Output :</p>
+    <marquee behavior="" direction=""><p id="dem"></p></marquee>
+    <script>
+      var user = "Shashavali";
+      var psw = "Shasha";
+
+      if (user == "Shashavali" && psw == "Shasha") {
+        console.log("Successfully LogedIn");
+      } else if (user == "Shashavali" && psw != "Shasha") {
+        console.log("Password is Invalid...");
+      } else if (user != "Shashavali" && psw == "Shasha") {
+        console.log("USer is Invalid...");
+      } else {
+        console.log("Invalid Credientials.");
+      }
+
+      document.getElementById("dem").innerHTML = m51;
+    </script>
+  </body>
+</html>
