@@ -11,18 +11,23 @@
     <script>
       var user = "Shashavali";
       var psw = "Shasha";
+      var op;
 
       if (user == "Shashavali" && psw == "Shasha") {
+        op = "Successfully LogedIn"
         console.log("Successfully LogedIn");
       } else if (user == "Shashavali" && psw != "Shasha") {
+        op = "Password is Invalid..."
         console.log("Password is Invalid...");
       } else if (user != "Shashavali" && psw == "Shasha") {
+        op = "USer is Invalid..."
         console.log("USer is Invalid...");
       } else {
+        op = "Invalid Credientials."
         console.log("Invalid Credientials.");
       }
 
-      document.getElementById("dem").innerHTML = m51;
+      document.getElementById("dem").innerHTML = op;
     </script>
   </body>
 </html>
